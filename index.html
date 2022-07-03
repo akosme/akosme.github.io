@@ -1,20 +1,460 @@
 <!DOCTYPE html>
 <html lang="hu-HU">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Mészáros Zsófia táplálkozási- és hormontanácsadó</title>
+    <meta name="auther" content="Mészáros Zsófia"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="táplálkozás, hormon, tanácsadás, mikrobiom"/>
+    <meta name="description" content="Számíthatsz rám holisztikus táplálkozás 
+    tanácsadás, hormon tanácsadás, csecsemő és kisgyermek táplálkozás tanácsadás 
+    és mikrobiom kiértékelés területein"/>
+    <!-- normalize css -->
+    <link rel = "stylesheet" href = "resources/normalize.css">
+    <!-- font -->
+    <link rel = "stylesheet" href = "resources/font.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel = "stylesheet" href = "resources/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel = "stylesheet" href = "resources/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+    <!-- animate css -->
+    <link rel = "stylesheet" href = "resources/animate.css-main/animate.css">
+    <!-- custom (main) css -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <h1>hello</h1>
-    <footer id="footer" class="footer-wf-section">
-        <div class="footer-container">
-            <!-- ::before -->
-            <div class="footer-flex-container"></div>
-            <div class="footer-copyright">Copyright © 2022 Mészáros Zsófia. Minden jog fenntartva.</div>
-            <!-- ::after -->
+
+    <!-- header -->
+    <header class = "header" id = "intro">
+        <nav class = "navbar">
+          <div class = "container">
+            <div class = "brand-and-toggler">
+              <a href = "index.html" class = "navbar-brand">
+                <!--Mészáros Zsófia-->
+                Just<span>.</span>Healthy
+                <!--Design<span>.</span>Diva-->
+              </a>
+              <button type = "button" class = "navbar-toggler" id = "navbar-toggler">
+                <i class = "fas fa-bars"></i>
+              </button>
+            </div>
+  
+            <div class = "navbar-collapse">
+              <ul class = "navbar-nav">
+                <li class = "nav-item">
+                  <a href = "#about" class = "nav-link">rólam</a>
+                </li>
+                <li class = "nav-item">
+                  <a href = "#feature" class = "nav-link">szolgáltatások</a>
+                </li>
+                <li class = "nav-item">
+                    <a href = "#process" class = "nav-link">együttműködés menete</a>
+                </li>
+                <li class = "nav-item">
+                  <a href = "#pricing" class = "nav-link">árak</a>
+                </li>
+                <li class = "nav-item">
+                  <a href = "#testimonial" class = "nav-link">visszajelzések</a>
+                </li>
+                <li class = "nav-item">
+                  <a href = "#contact" class = "nav-link">kapcsolat</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+        <div class = "hero-div center container">
+          <h1>Mészáros Zsófia</h1>
+          <p class = "animate__animated animate__fadeInUp animate__slow">Táplálkozási- és hormontanácsadó</p>
+  
+          <div class = "hero-btns animate__animated animate__fadeInUp animate__slow">
+            <button type = "button" class = "btn-trans" onclick="window.location.href='#feature'">szolgáltatásaim</button>
+            <button type = "button" class = "btn-white" onclick="window.location.href='#about'">tudj meg rólam többet</button>
+          </div>
         </div>
-    </footer>
+      </header>
+    <!-- end of header -->
+      
+      <!-- features section -->
+      <section class = "feature" id = "about">
+        <div class = "container">
+          <div class = "row">
+            <div class = "feature-left wow animate__animated animate__fadeInUp animate__slow">
+              <img src = "assets/meszaros-zsofi.jpg" alt = "">
+            </div>
+            <div class = "feature-right wow animate__animated animate__fadeInUp animate__slow">
+              <div class = "title">
+                <h2>Rólam</h2>
+                <p class = "text">Mészáros Zsófia vagyok, táplálkozási- és hormontanácsadó. 
+                    Tanulmányaimat az egészségügy különböző területein és szintjein végeztem, 
+                    de ezek közül leginkább táplálkozás és hormonrendszer világa áll hozzám 
+                    a legközelebb. Hiszem, hogy a bélrendszer egészsége- és ezáltal a 
+                    táplálkozás nagymértékben meghatározza az egész szervezet működését.</p>
+              </div>
+              <div class = "title">
+                <p class = "text">Fontosnak tartom, hogy ne keveredjünk a divat diéták 
+                    útvesztőjébe, és ne úgy kezeljük a problémákat, ahogy az a szomszédnak 
+                    bevált. Minden szervezet más, sőt egy ember különböző életszakaszokban 
+                    és különböző kiváltó okok hatására is produkálhat másfajta tüneteket, 
+                    tehát miért kellene mindenkinek ugyanazokat az életmódbeli javaslatokat 
+                    követni?</p>
+              </div>
+              <div class = "title">
+                <p class="text">Tanácsadásaim alapját legtöbbször mikrobiom vizsgálat képezi, 
+                    mely egy egyedi és össze nem téveszthető lenyomata a bélflóránknak. 
+                    Ennek segítségével komplex képet kapunk a bél állapotáról és ezáltal a 
+                    szervezet további összefüggéseire is fény derül.</p>
+              </div>
+              <div class = "title">
+                <p class="text">Vannak olyan esetek, amikor nem kimondottan indokolt a 
+                    mikrobiom vizsgálat elvégzése, de ebben az esetben is legalább 
+                    laborleletekre van szükség, hogy képet kapjunk az állapotról. Ha esetleg 
+                    nincs kéznél laborlelet, vagy nem tudod mire is van szükség pontosan, ne 
+                    aggódj, az első konzultáció alkalmával átbeszéljük.</p>
+              </div>
+  
+              <!-- <div class = "feature-item">
+                <span><i class = "fas fa-tablet-alt"></i></span>
+                <div>
+                  <h3>Responsive Design</h3>
+                  <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est minima voluptas cupiditate molestias! Vel.</p>
+                </div>
+              </div>
+  
+              <div class = "feature-item">
+                <span><i class = "fas fa-clone"></i></span>
+                <div>
+                  <h3>Retina Ready</h3>
+                  <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque est minima voluptas cupiditate molestias! Vel.</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of features section -->
+    
+    <!-- team section -->
+    <section class = "team" id = "feature">
+        <div class = "container">
+          <div class = "title">
+            <h2 class = "wow animate__animated animate__bounceIn animate__slow">Ismerd meg a szolgáltatásaimat</h2>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+  
+          <div class = "row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "team-item">
+              <div class = "team-img">
+                <p>A mikrobiom vizsgálattal a bélflóra összetételét vizsgáljuk. Ismeretében pontos 
+                    képet kapunk arról, hogy mi zajlik a szervezetben, így a helyreállítási 
+                    folyamatokat is biztosabban tudjuk megtervezni. A bélflóra helyreállítása 
+                    messze nem csak az emésztőrendszer állapotáról szól, hanem az egész szervezetre 
+                    hatással van. Természetesen emésztőrendszeri problémák esetén különösen ajánlott 
+                    a mikrobiom feltérképezése, de ugyanúgy hasznos információkat kapunk hormonális 
+                    kibillenések, rossz közérzet, depressziós állapotok, felszívódási zavarok, 
+                    hízási/fogyási nehézségek, ekcéma, bőrkiütések esetén is. A kiértékelés során 
+                    részletesen megbeszéljük a vizsgálati eredményt és a helyreállítás pontos 
+                    menetrendjét. A helyreállítást szoros utánkövetés kíséri. </p>
+              </div>
+              <div class = "team-info">
+                <h3>Mikrobiom kiértékelés</h3>
+              </div>
+            </div>
+  
+            <div class = "team-item">
+              <div class = "team-img">
+                <p>A „hormon” szó hallatán mindenki egyből a nemi hormonokra, azon belül is a női 
+                    nemi hormonokra gondol. Valójában azonban számos egyéb hormon és hormonszerű 
+                    anyag kering a szervezetünkben, amelyek meghatározzák a mindennapjainkat. Ebbe 
+                    a problémakörbe tartozik az inzulinrezisztencia, a mellékvesekifáradás, a 
+                    pajzsmirigyproblémák, és természetesen a nemi hormonokat érintő egyensúlytalanságok 
+                    is (PCO/PCOS, endometriózis, rendszertelen menstruáció, cikluszavarok, fogantatási 
+                    nehézségek). A helyreállítás életmódbeli javaslatokat, szükség esetén kiegészítőket, 
+                    illetve cikluskövetést tartalmaz. A konzultáció kb 1 órát vesz igénybe, melyet 
+                    meghatározott időközönként utókövetés kísér. </p>
+              </div>
+              <div class = "team-info">
+                <h3>Hormonegyensúly beállítás</h3>
+              </div>
+            </div>
+
+            <div class = "team-item">
+              <div class = "team-img">
+                <img src = "assets/team-5.jpg" alt = "">
+                <!-- <div class = "team-icons">
+                  <a href = "#" class = "center">
+                    <i class = "fab fa-facebook-f"></i>
+                  </a>
+                  <a href = "#" class = "center">
+                    <i class = "fab fa-twitter"></i>
+                  </a>
+                  <a href = "#" class = "center">
+                    <i class = "fab fa-instagram"></i>
+                  </a>
+                </div> -->
+              </div>
+              <div class = "team-info">
+                <h3>Full Name Here</h3>
+                <!-- <span>Web Developer</span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of team section -->
+    
+     <!-- detail section -->
+     <section class = "detail" id="process">
+        <div class = "container" >
+            <div class = "title">
+                <h2 class = "wow animate__animated animate__bounceIn animate__slow">Együttműködés menete</h2>
+                <p class = "text"></p>
+            </div>
+          <div class = "row">
+            <div class = "detail-item wow animate__animated animate__fadeInLeft animate__slow">
+              <span><i class="fa-solid fa-1"></i></i></span>
+              <h2>Előkonzultáció</h2>
+              <div class = "line"></div>
+              <p class = "text">Az előkonzultáció során az állapotod ismeretében megbeszélünk 
+                egy lehetséges kezelési tervet annak lépéseivel és időtervével együtt. 
+                Amennyiben az ajánlat megfelel számodra, átbeszéljük a szükséges leleteket.</p>
+            </div>
+  
+            <div class = "detail-item wow animate__animated animate__fadeInUp animate__s">
+                <span><i class="fa-solid fa-2"></i></i></span>
+              <h2>Leletek közös kiértékelése</h2>
+              <div class = "line"></div>
+              <p class = "text">A kiértékelés során közösen átbeszéljük a lelet(ek) eredményeit 
+                és megkezdjük a helyreállítási folyamatokat, melyhez pontos és követehető 
+                javaslatokat fogok adni a biztos javulás érdekében. Állapottól függően előre 
+                megbeszélt időpontokban rövid konzultációkat tartunk, de természetesen ha 
+                valahol elakadsz, a helyreállítás bármelyik szakaszában tudunk egyeztetni. </p>
+            </div>
+  
+            <div class = "detail-item wow animate__animated animate__fadeInRight animate__slow">
+              <span><i class="fa-solid fa-3"></i></i></span>
+              <h2>Utókövetés</h2>
+              <div class = "line"></div>
+              <p class = "text">Az utókövetés során megbeszéljük milyen változások történtek 
+                az elmúlt időszakban és a hosszútávú és tartós állapotjavulás érdekében teszek 
+                javaslatokat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of detial section -->
+    
+    <!-- faq section -->
+    <section class = "faq">
+        <div class = "container">
+          <div class = "title">
+            <h2 class = "wow animate__animated animate__bounceIn animate__slow">Have Any Questions?</h2>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+  
+          <div class = "row wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "faq-item">
+              <div class = "faq-head">
+                <h3>What is Web Development?</h3>
+                <span><i class = "fas fa-plus"></i></span>
+              </div>
+              <div class = "faq-content">
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi quis molestiae autem exercitationem sed, asperiores provident aut, quaerat illo ex reiciendis sapiente voluptas quisquam?</p>
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit! Officiis architecto laboriosam harum officia!</p>
+              </div>
+            </div>
+  
+            <div class = "faq-item">
+              <div class = "faq-head">
+                <h3>Which technologies are important for web development?</h3>
+                <span><i class = "fas fa-plus"></i></span>
+              </div>
+              <div class = "faq-content">
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi quis molestiae autem exercitationem sed, asperiores provident aut, quaerat illo ex reiciendis sapiente voluptas quisquam?</p>
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit! Officiis architecto laboriosam harum officia!</p>
+              </div>
+            </div>
+  
+            <div class = "faq-item">
+              <div class = "faq-head">
+                <h3>What type of website are good for business purpose?</h3>
+                <span><i class = "fas fa-plus"></i></span>
+              </div>
+              <div class = "faq-content">
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi quis molestiae autem exercitationem sed, asperiores provident aut, quaerat illo ex reiciendis sapiente voluptas quisquam?</p>
+                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, suscipit! Officiis architecto laboriosam harum officia!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of faq section -->
+  
+      <!-- pricing section -->
+      <section class = "pricing" id = "pricing">
+        <div class = "container">
+          <div class = "title">
+            <h2 class = "wow animate__animated animate__bounceIn animate__slow">Our Package</h2>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+  
+          <div class = "row wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "pricing-item">
+              <h2>Business Version</h2>
+              <div class = "price">
+                <span>$ 120</span>
+                <span class = "text">Monthly</span>
+              </div>
+              <ul>
+                <li>24 Accounts</li>
+                <li>10 GB Storage</li>
+                <li>Lifetime Support</li>
+                <li>Reliable Service</li>
+              </ul>
+            </div>
+  
+            <div class = "pricing-item">
+              <h2>Professional Version</h2>
+              <div class = "price">
+                <span>$ 120</span>
+                <span class = "text">Monthly</span>
+              </div>
+              <ul>
+                <li>24 Accounts</li>
+                <li>10 GB Storage</li>
+                <li>Lifetime Support</li>
+                <li>Reliable Service</li>
+              </ul>
+            </div>
+  
+            <div class = "pricing-item">
+              <h2>Standard Version</h2>
+              <div class = "price">
+                <span>$ 120</span>
+                <span class = "text">Monthly</span>
+              </div>
+              <ul>
+                <li>24 Accounts</li>
+                <li>10 GB Storage</li>
+                <li>Lifetime Support</li>
+                <li>Reliable Service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of pricing section -->
+  
+      <!-- testimonial section -->
+      <section class = "testimonial" id = "testimonial">
+        <div class = "container">
+          <div class = "title">
+            <h2 class = "wow animate__animated animate__bounceIn animate__slow">Testimonials Words</h2>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+  
+          <div class = "row owl-carousel owl-theme wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "testimonial-item">
+              <div class = "testimonial-img">
+                <img src = "assets/test-1.jpg" alt = "">
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus necessitatibus totam alias unde sint veritatis placeat beatae maiores odio?</p>
+              <span>Someone's Name</span>
+            </div>
+  
+            <div class = "testimonial-item">
+              <div class = "testimonial-img">
+                <img src = "assets/test-2.jpg" alt = "">
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus necessitatibus totam alias unde sint veritatis placeat beatae maiores odio?</p>
+              <span>Someone's Name</span>
+            </div>
+  
+            <div class = "testimonial-item">
+              <div class = "testimonial-img">
+                <img src = "assets/test-3.jpg" alt = "">
+              </div>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta doloribus necessitatibus totam alias unde sint veritatis placeat beatae maiores odio?</p>
+              <span>Someone's Name</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of testimonial section -->
+  
+      <!-- contact section -->
+      <section class = "contact" id = "contact">
+        <div class = "container">
+          <div class = "title">
+            <h2 class = "wow animate__animated animate__bounceIn animate__slow">Contact Us</h2>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+  
+          <div class = "row wow animate__animated animate__fadeInUp animate__slow">
+            <div class = "contact-left">
+              <h2>Send Message Here</h2>
+              <form>
+                <input type = "text" class = "form-control" placeholder="Name">
+                <input type = "email" class = "form-control" placeholder="Email">
+                <textarea placeholder="Message" rows = "6"></textarea>
+                <button type = "submit" class = "submit-btn">Send Now</button>
+              </form>
+            </div>
+  
+            <div class = "contact-right">
+              <div>
+                <h2>Visit Office</h2>
+                <p class = "text">1001 Parker Street, Florida - Orlando, 8000, United States</p>
+              </div>
+              <div>
+                <h2>Call Us</h2>
+                <p class = "text">0033-2332=8448 / 8320-2838-0000</p>
+              </div>
+              <div>
+                <h2>Send Email</h2>
+                <p class = "text">design.diva@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end of contact section -->
+  
+      <!-- footer -->
+      <footer class = "footer center">
+        <div class = "container">
+          <p class = "text">Copyright &copy; Design.Diva Website | All Rights Reserved</p>
+          <div class = "footer-links">
+            <a href = "#" class = "center">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#" class = "center">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#" class = "center">
+              <i class = "fab fa-linkedin"></i>
+            </a>
+            <a href = "#" class = "center">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#" class = "center">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+
+    <!-- jQuery -->
+    <script src = "resources/jquery-3.6.0.js"></script>
+    <!-- owl carousel -->
+    <script src = "resources/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- wow js -->
+    <script src = "resources/WOW-master/dist/wow.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js" ></script>
 </body>
 </html>
