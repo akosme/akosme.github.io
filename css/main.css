@@ -381,8 +381,12 @@ section{
     cursor: pointer;
     padding: 0.2rem 1.8rem;
 }
-.faq h2{
+.faq h2, h3{
     text-transform: none;
+}
+.faq .row h2{
+    text-align: center;
+    padding-top: 5.4rem;
 }
 .faq-head h3{
     font-weight: 300;
