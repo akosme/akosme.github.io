@@ -656,23 +656,28 @@
   
             <div class = "contact-right">
               <h2>Szükséged van előkonzultációra?</h2>
-              <div class="checkbox-yes">
-                <input type="checkbox" id="check" >
-                <label for="check" class="checkmark"></label>
+              <div class="radio-item">
+                <label class="radio" for="myRadioId">
+                    <input type="radio" class="radio-input" name="myRadioName" id="myRadioId">
+                    <div class="radio-box"></div>
+                    <p>Igen</p>
+                </label>
+              </div>
+              <div class="radio-item">
+                <label class="radio" for="myRadioId2">
+                    <input type="radio" class="radio-input" name="myRadioName" id="myRadioId2">
+                    <div class="radio-box"></div>
+                    <p>Nem</p>
+                </label>
               </div>
               <h2>Melyik szolgáltatást vennéd igénybe?</h2>
-              <label class="checkbox">Mikrobiom kiértékelés
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox">Hormontanácsadás
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
-              <label class="checkbox">Táplálkozás tanácsadás
-                <input type="checkbox">
-                <span class="checkmark"></span>
-              </label>
+              <div class="checkbox-item">
+                <label class="checkbox" for="myCheckboxId2">
+                    <input type="checkbox" class="checkbox-input" name="myCheckboxName" id="myCheckboxId2">
+                    <div class="checkbox-box"></div>
+                    <p>Hormonegyensúly beállítás</p>
+                </label>
+            </div>
             </div>
           </div>
         </div>

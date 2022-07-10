@@ -66,6 +66,14 @@ $(document).ready(function(){
         });
     });
 
+    $("input[type='checkbox']").change(function(){
+        if($(this).is(":checked")){
+            $(this).parent().parent().addClass("redBackground"); 
+        }else{
+            $(this).parent().parent().removeClass("redBackground");  
+        }
+    });
+
     // testimonial carousel 
     $('.testimonial .owl-carousel').owlCarousel({
         loop: true,
