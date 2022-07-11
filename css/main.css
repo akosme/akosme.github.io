@@ -517,7 +517,8 @@ section{
     opacity: 0.9;
 }
 .contact-left form input,
-.contact-left form textarea{
+.contact-left form textarea,
+.contact-left form p{
     width: 100%;
     font-size: 1.1rem;
     margin: 0.2rem 0;
@@ -527,28 +528,20 @@ section{
     outline: 0;
 }
 .contact-left form input::placeholder,
-.contact-left form textarea::placeholder{
+.contact-left form textarea::placeholder,
+.contact-left form p::placeholder{
     font-size: 1.1rem;
     font-weight: 300;
     opacity: 0.8;
 }
 .contact-left form input:focus,
-.contact-left form textarea:focus{
+.contact-left form textarea:focus,
+.contact-left form p:focus{
     border-color: var(--night-rider);
 }
-.submit-btn{
-    margin: 1rem 0;
-    border: none;
-    font-size: 1.3rem;
-    color: #fff;
-    background: var(--mount-meadow);
-    opacity: 0.9;
-    padding: 0.8rem 3.4rem;
-    border-radius: 2rem;
-    transition: var(--transition);
-}
-.submit-btn:hover{
-    background: var(--black);
+.contact-left form p{
+    text-transform: none;
+    background-color: #ffffff;
 }
 
 /* Radio selection */
@@ -646,7 +639,6 @@ section{
     height: 22px;
     cursor: pointer;
 }
-    
 .cbox{ 
     display: inline-flex;
     align-items: center;
@@ -681,7 +673,24 @@ section{
     transform: scale(1);
 }
 
-
+/* Contact button */
+.contact-middle{
+    text-align: center;
+}
+.submit-btn{
+    margin: 1rem 0;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--mount-meadow);
+    opacity: 0.9;
+    padding: 0.8rem 3.4rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+.submit-btn:hover{
+    background: var(--black);
+}
 
 
 

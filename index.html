@@ -647,10 +647,12 @@
             <div class = "contact-left">
               <h2>Itt tudsz üzenni</h2>
               <form>
-                <input type = "text" class = "form-control" placeholder="Neved">
-                <input type = "email" class = "form-control" placeholder="Email-ed">
-                <textarea placeholder="Üzeneted" rows = "6"></textarea>
-                <button type = "submit" class = "submit-btn">Küldés</button>
+                <input type = "text" class = "form-control" placeholder="Neved" required>
+                <input type = "email" class = "form-control" placeholder="Email-ed" required>
+                <p id="radioValue">Válasszd az ingyenes előkonzultációt!</p>
+                <p id="valueList">Válasszd ki a kívánt szolgáltatást! </p>
+                <textarea placeholder="Üzeneted" rows = "6" required></textarea>
+                <!-- <button type = "submit" class = "submit-btn">Küldés</button> -->
               </form>
             </div>
   
@@ -695,6 +697,11 @@
                   <label for="cb-konzultacio">Konzultáció</label>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="contact-middle">
+            <div class="send-button">
+              <button type = "submit" class = "submit-btn">Küldés</button>
             </div>
           </div>
         </div>

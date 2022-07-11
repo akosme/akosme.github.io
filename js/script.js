@@ -86,7 +86,8 @@ $(document).ready(function(){
 });
 
 var valueList = document.getElementById('valueList');
-var text = '<span> you have selected : </span>';
+var textRadio = '';
+var textCheckbox = '<span> Választott szolgáltatásaim: </span>';
 var listArray = [];
 
 var checkboxes = document.querySelectorAll('.checkbox-input');
@@ -97,13 +98,13 @@ for(var checkbox of checkboxes){
     checkbox.addEventListener('click',function(){
         if(this.checked == true) {
             listArray.push(this.value);
-            valueList.innerHTML = text + listArray.join(' / ');
+            valueList.innerHTML = textCheckbox + listArray.join(' / ');
             $(this).parent().addClass("greenBackground");            
         }
         else{
             // remove value from array when it is unchecked
             listArray = listArray.filter(e => e !== this.value);
-            valueList.innerHTML = text + listArray.join(' / ');
+            valueList.innerHTML = textCheckbox + listArray.join(' / ');
             $(this).parent().removeClass("greenBackground");
         }
     })
@@ -112,7 +113,13 @@ for(var checkbox of checkboxes){
 for(var radio of radios){
     radio.addEventListener('click',function(){
     if(this.checked == true){
-        radioValue.innerHTML = text + this.value;
+        if(this.value == 'igen'){
+            radioValue.innerHTML = textRadio + 'Szükségem van előkonzultációra'
+        }
+        else{
+            radioValue.innerHTML = textRadio + 'Nincs szükségem előkonzultációra'
+        }
+        // radioValue.innerHTML = text + this.value;
     }
     })
 }
