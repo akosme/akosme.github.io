@@ -656,28 +656,45 @@
   
             <div class = "contact-right">
               <h2>Szükséged van előkonzultációra?</h2>
-              <div class="radio-item">
-                <label class="radio" for="myRadioId">
-                    <input type="radio" class="radio-input" name="myRadioName" id="myRadioId">
-                    <div class="radio-box"></div>
-                    <p>Igen</p>
-                </label>
+              <div class="input-rbox-wrapper">
+                <div class="rbox">
+                  <input type="radio" value="igen" class="radiobox" id="igen" name="igennem" >
+                  <label class="radiobox-label" for="igen">igen</label>
+                </div>
+                <div class="rbox">
+                  <input type="radio" value="nem" class="radiobox" id="nem" name="igennem">
+                  <label class="radiobox-label" for="nem">nem</label>
+                </div>
               </div>
-              <div class="radio-item">
-                <label class="radio" for="myRadioId2">
-                    <input type="radio" class="radio-input" name="myRadioName" id="myRadioId2">
-                    <div class="radio-box"></div>
-                    <p>Nem</p>
-                </label>
-              </div>
+              
               <h2>Melyik szolgáltatást vennéd igénybe?</h2>
-              <div class="checkbox-item">
-                <label class="checkbox" for="myCheckboxId2">
-                    <input type="checkbox" class="checkbox-input" name="myCheckboxName" id="myCheckboxId2">
-                    <div class="checkbox-box"></div>
-                    <p>Hormonegyensúly beállítás</p>
-                </label>
-            </div>
+              <div class="input-cbox-wrapper">
+                <div class="cbox">
+                  <input type="checkbox" value="Mikrobiom kiértékelés" class="checkbox-input" id="cb-mikrobiom">
+                  <div class="checkbox-box"></div>
+                  <label for="cb-mikrobiom">Mikrobiom kiértékelés</label>
+                </div>
+                <div class="cbox">
+                  <input type="checkbox" value="Hormonegyensúly beállítás" class="checkbox-input" id="cb-hormon">
+                  <div class="checkbox-box"></div>
+                  <label for="cb-hormon">Hormonegyensúly beállítás</label>
+                </div>
+                <div class="cbox">
+                  <input type="checkbox" value="Táplálkozási tanácsadás" class="checkbox-input" id="cb-taplalkozas">
+                  <div class="checkbox-box"></div>
+                  <label for="cb-taplalkozas">Táplálkozási tanácsadás</label>
+                </div>
+                <div class="cbox">
+                  <input type="checkbox" value="Csecsemő- és kisgyermek táplálkozás" class="checkbox-input" id="cb-csecsemo">
+                  <div class="checkbox-box"></div>
+                  <label for="cb-csecsemo">Csecsemő- és kisgyermek táplálkozás</label>
+                </div>
+                <div class="cbox">
+                  <input type="checkbox" value="Konzultáció" class="checkbox-input" id="cb-konzultacio">
+                  <div class="checkbox-box"></div>
+                  <label for="cb-konzultacio">Konzultáció</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>

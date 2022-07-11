@@ -10,26 +10,29 @@
 <body>
     <div class="container">
         <p class="title">Choose</p>
-        <div class="input-box-wrapper">
-            <div class="box">
-                <input type="checkbox" value="javascript" class="checkbox" id="javascript">
+        <div class="input-rbox-wrapper">
+            <div class="cbox">
+                <input type="checkbox" value="javascript" class="checkbox-input" id="javascript">
+                <div class="checkbox-box"></div>
                 <label for="javascript">javascript</label>
             </div>
-            <div class="box">
-                <input type="checkbox" value="python" class="checkbox" id="python">
+            <div class="cbox">
+                <input type="checkbox" value="python" class="checkbox-input" id="python">
+                <div class="checkbox-box"></div>
                 <label for="python">python</label>
             </div>
-            <div class="box">
-                <input type="checkbox" value="swift" class="checkbox" id="swift">
+            <div class="cbox">
+                <input type="checkbox" value="swift" class="checkbox-input" id="swift">
+                <div class="checkbox-box"></div>
                 <label for="swift">swift</label>
             </div>
-            <div class="box">
-                <input type="radio" value="igen" class="radio" id="igen" name="igennem" >
-                <label for="igen">igen</label>
+            <div class="rbox">
+                <input type="radio" value="igen" class="radiobox" id="igen" name="igennem" >
+                <label class="radiobox-label" for="igen">igen</label>
             </div>
-            <div class="box">
-                <input type="radio" value="nem" class="radio" id="nem" name="igennem">
-                <label for="nem">nem</label>
+            <div class="rbox">
+                <input type="radio" value="nem" class="radiobox" id="nem" name="igennem">
+                <label class="radiobox-label" for="nem">nem</label>
             </div>
         </div>
         <div class="print-values">
@@ -40,6 +43,9 @@
         </div>
     </div>
 
+    <!-- jQuery -->
+    <script src = "resources/jquery-3.6.0.js"></script>
+    <!-- javascript -->
     <script src="js/script2.js" ></script>
 </body>
 </html>

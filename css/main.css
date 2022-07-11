@@ -550,46 +550,104 @@ section{
 .submit-btn:hover{
     background: var(--black);
 }
-.contact-right div{
-    margin: 2rem 0;
-}
 
-/* radio items */
-.radio {
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
+/* Radio selection */
+
+/* .contact-right div{
+    margin: 2rem 0;
+} */
+
+/* .contact-right .input-rbox-wrapper{
+    position: relative;
+    display: block;
+} */
+.input-rbox-wrapper .rbox{
+    /* border: 1px solid #383854; */
+    padding: 14px 10px;
+    width: 50%;
+    display: flex;
+    text-align: center;
+    background-color: #ffffff;
 }
-.radio-input{
+/* .input-box-wrapper .cbox:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.input-box-wrapper .cbox:last-child{
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid #383854;
+} */
+/* .input-rbox-wrapper .cbox label{
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-left: 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+} */
+.input-rbox-wrapper .rbox:first-child{
+    margin-right: 2.5px;
+}
+.input-rbox-wrapper .rbox:last-child{
+    margin-left: 2.5px;
+}
+.input-rbox-wrapper .rbox label{
+    color: var(--black);
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+}
+.greenBackground {
+    background-color:#1bbc9c!important;
+}
+.input-rbox-wrapper .rbox .radiobox{
     display: none;
 }
-.radio-box{
-    width: 1.25em;
-    height: 1.25em;
-    border: 2px solid #cccccc;
-    border-radius: 3px;
+.input-rbox-wrapper{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    flex-shrink: 0;
-    transition: background 0.25s, border-color 0.25s;
 }
-.radio-box::after{
-    content: "\2714";
+
+/* Checkbox selection  */
+.input-cbox-wrapper .cbox{
+    display: flex;
+    padding: 14px 10px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+}
+.input-box-wrapper .cbox:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.input-box-wrapper .cbox:last-child{
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid #383854;
+}
+.input-cbox-wrapper .cbox label{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+/* .input-box-wrapper .rbox:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.input-box-wrapper .rbox:last-child{
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid #383854;
+} */
+/* .input-cbox-wrapper .cbox label{
     color: #ffffff;
-    transform: scale(0);
-    transition: transform 0.15s;
+    text-transform: capitalize;
+    margin-left: 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+} */
+.input-cbox-wrapper .cbox .checkbox-input{
+    position: relative;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
 }
-.radio-input:checked + .radio-box{
-    background: #2266dc;
-    border-color: #2266dc;
-}
-.radio-input:checked + .radio-box::after{
-    transform: scale(1);
-}
-/* checkbox items */
-.checkbox {
+    
+.cbox{ 
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -607,13 +665,13 @@ section{
     justify-content: center;
     margin-right: 10px;
     flex-shrink: 0;
-    transition: background 0.25s, border-color 0.25s;
+    transition: background 0.45s, border-color 0.45s;
 }
 .checkbox-box::after{
     content: "\2714";
     color: #ffffff;
     transform: scale(0);
-    transition: transform 0.15s;
+    transition: transform 0.45s;
 }
 .checkbox-input:checked + .checkbox-box{
     background: #2266dc;
@@ -622,9 +680,14 @@ section{
 .checkbox-input:checked + .checkbox-box::after{
     transform: scale(1);
 }
-.redBackground{
-    background-color: red;  
-}
+
+
+
+
+
+
+
+
 
 /* footer */
 .footer{

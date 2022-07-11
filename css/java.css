@@ -25,10 +25,10 @@ html,body{
     text-transform: capitalize;
     margin-bottom: 3rem;
 }
-.container .input-box-wrapper{
+.container .input-rbox-wrapper{
     position: relative;
 }
-.input-box-wrapper .box{
+.input-rbox-wrapper .cbox{
     position: relative;
     display: flex;
     align-items: center;
@@ -36,14 +36,24 @@ html,body{
     border-bottom: 0;
     padding: 14px 10px;
 }
-.input-box-wrapper .box:first-child{
+.input-rbox-wrapper .rbox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #383854;
+    border-bottom: 0;
+    padding: 14px 10px;
+    width: 50%;
+    float: left;
+}
+/* .input-box-wrapper .cbox:first-child{
     border-radius: 15px 15px 0 0;
 }
-.input-box-wrapper .box:last-child{
+.input-box-wrapper .cbox:last-child{
     border-radius: 0 0 15px 15px;
     border-bottom: 1px solid #383854;
-}
-.input-box-wrapper .box label{
+} */
+.input-rbox-wrapper .cbox label{
     color: #ffffff;
     text-transform: capitalize;
     margin-left: 20px;
@@ -51,15 +61,30 @@ html,body{
     display: block;
     width: 100%;
 }
-.input-box-wrapper .box .checkbox{
+/* .input-box-wrapper .rbox:first-child{
+    border-radius: 15px 15px 0 0;
+}
+.input-box-wrapper .rbox:last-child{
+    border-radius: 0 0 15px 15px;
+    border-bottom: 1px solid #383854;
+} */
+.input-rbox-wrapper .rbox label{
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-left: 20px;
+    cursor: pointer;
+    /* display: block; */
+    width: 100%;
+}
+.input-rbox-wrapper .cbox .checkbox-input{
     position: relative;
     width: 22px;
     height: 22px;
     cursor: pointer;
 }
 .print-values{
-    position: relative;
-    margin-top: 2rem;
+    /* position: relative; */
+    margin-top: 4rem;
 }
 .print-values p{
     background: #1e1e2e;
@@ -67,6 +92,49 @@ html,body{
     color: #b8b8b8;
     text-transform: capitalize;
     border-top: #383854;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+}
+.yellowBackground {
+    background-color:yellow;
+}
+.input-rbox-wrapper .rbox .radiobox{
+    background: #232234;
+    display: none;
+}
+.input-rbox-wrapper .rbox .radiobox-label{
+    margin-left: 0;
+}
+
+
+.cbox { 
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.checkbox-input{
+    display: none;
+}
+.checkbox-box{
+    width: 1.25em;
+    height: 1.25em;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    flex-shrink: 0;
+    transition: background 0.45s, border-color 0.45s;
+}
+.checkbox-box::after{
+    content: "\2714";
+    color: #ffffff;
+    transform: scale(0);
+    transition: transform 0.45s;
+}
+.checkbox-input:checked + .checkbox-box{
+    background: #2266dc;
+    border-color: #2266dc;
+}
+.checkbox-input:checked + .checkbox-box::after{
+    transform: scale(1);
 }
