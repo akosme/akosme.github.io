@@ -643,20 +643,26 @@
             <!-- <p class = "text">Lorem ipsum dolor sit amet consectetur</p> -->
           </div>
   
-          <div class = "row wow animate__animated animate__fadeInUp animate__slow">
-            <div class = "contact-left">
+          <div class = "row">
+            <div class = "contact-left wow animate__animated animate__fadeInLeft animate__slow">
               <h2>Itt tudsz üzenni</h2>
-              <form>
+              <form id="contact-form-id">
                 <input type = "text" class = "form-control" placeholder="Neved" required>
                 <input type = "email" class = "form-control" placeholder="Email-ed" required>
-                <p id="radioValue">Válasszd az ingyenes előkonzultációt!</p>
-                <p id="valueList">Válasszd ki a kívánt szolgáltatást! </p>
-                <textarea placeholder="Üzeneted" rows = "6" required></textarea>
-                <!-- <button type = "submit" class = "submit-btn">Küldés</button> -->
+                <div class="left-form-p">
+                  <p id="radioValue">Válasszd az ingyenes előkonzultációt!</p>
+                  <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
+                </div>
+                <div class="left-form-p">
+                  <p id="valueList">Válasszd ki a kívánt szolgáltatást! </p>
+                  <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
+                </div>
+                <textarea placeholder="Üzeneted" rows = "7" required></textarea>
+                <button type = "submit" class = "submit-btn">Küldés</button>
               </form>
             </div>
   
-            <div class = "contact-right">
+            <div class = "contact-right wow animate__animated animate__fadeInRight animate__slow">
               <h2>Szükséged van előkonzultációra?</h2>
               <div class="input-rbox-wrapper">
                 <div class="rbox">
@@ -701,7 +707,7 @@
           </div>
           <div class="contact-middle">
             <div class="send-button">
-              <button type = "submit" class = "submit-btn">Küldés</button>
+              <button form="contact-form-id" type = "submit" class = "submit-btn">Küldés</button>
             </div>
           </div>
         </div>

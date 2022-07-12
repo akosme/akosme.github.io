@@ -517,31 +517,38 @@ section{
     opacity: 0.9;
 }
 .contact-left form input,
-.contact-left form textarea,
-.contact-left form p{
+.contact-left form textarea{
     width: 100%;
     font-size: 1.1rem;
-    margin: 0.2rem 0;
-    padding: 0.8rem 0.6rem;
+    margin-bottom: 5px;
+    /* margin: 0.2rem 0; */
+    padding: 0.7rem 0.6rem;
     border: none;
-    border-bottom: 1.5px solid #f0f0f0;
+    /* border-bottom: 1.5px solid #f0f0f0; */
     outline: 0;
 }
 .contact-left form input::placeholder,
-.contact-left form textarea::placeholder,
-.contact-left form p::placeholder{
+.contact-left form textarea::placeholder{
     font-size: 1.1rem;
     font-weight: 300;
     opacity: 0.8;
 }
 .contact-left form input:focus,
-.contact-left form textarea:focus,
-.contact-left form p:focus{
+.contact-left form textarea:focus{
     border-color: var(--night-rider);
 }
 .contact-left form p{
     text-transform: none;
+}
+.contact-left .left-form-p{
     background-color: #ffffff;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.7rem 0.6rem;
+}
+.fa-circle-arrow-right{
+    color: #1bbc9c;
 }
 
 /* Radio selection */
@@ -556,7 +563,7 @@ section{
 } */
 .input-rbox-wrapper .rbox{
     /* border: 1px solid #383854; */
-    padding: 14px 10px;
+    /* padding: 14px 10px; */
     width: 50%;
     display: flex;
     text-align: center;
@@ -588,6 +595,9 @@ section{
     text-transform: capitalize;
     cursor: pointer;
     width: 100%;
+    font-size: 1.1rem;
+    height: 52px;
+    line-height: 52px;
 }
 .greenBackground {
     background-color:#1bbc9c!important;
@@ -597,6 +607,7 @@ section{
 }
 .input-rbox-wrapper{
     display: flex;
+    margin-bottom: 15px;
 }
 
 /* Checkbox selection  */
@@ -605,13 +616,6 @@ section{
     padding: 14px 10px;
     margin-bottom: 5px;
     background-color: #ffffff;
-}
-.input-box-wrapper .cbox:first-child{
-    border-radius: 15px 15px 0 0;
-}
-.input-box-wrapper .cbox:last-child{
-    border-radius: 0 0 15px 15px;
-    border-bottom: 1px solid #383854;
 }
 .input-cbox-wrapper .cbox label{
     cursor: pointer;

@@ -114,10 +114,10 @@ for(var radio of radios){
     radio.addEventListener('click',function(){
     if(this.checked == true){
         if(this.value == 'igen'){
-            radioValue.innerHTML = textRadio + 'Szükségem van előkonzultációra'
+            radioValue.innerHTML = textRadio + 'Szükségem van előkonzultációra';
         }
         else{
-            radioValue.innerHTML = textRadio + 'Nincs szükségem előkonzultációra'
+            radioValue.innerHTML = textRadio + 'Nincs szükségem előkonzultációra';
         }
         // radioValue.innerHTML = text + this.value;
     }
