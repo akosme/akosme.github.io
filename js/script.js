@@ -135,3 +135,19 @@ $("input[type='radio']").change(function(){
         $("input[id='igen']").parent().removeClass("greenBackground");
     }
 });
+
+function sendMail(params){
+    var templateParams = {
+        from_name: document.getElementById("fromName").value,
+        from_email: document.getElementById("fromEmail").value,
+        sel_service: document.getElementById("valueList").value,
+        pre_consult: document.getElementById("radioValue").value,
+        message: document.getElementById("formMsg").value,
+    };
+    emailjs.send('service_x55jo8n', 'template_7sit8pl', templateParams)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+}

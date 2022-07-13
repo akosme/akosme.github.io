@@ -23,7 +23,13 @@
     <link rel = "stylesheet" href = "resources/animate.css-main/animate.css">
     <!-- custom (main) css -->
     <link rel="stylesheet" href="css/main.css">
-</head>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){emailjs.init("neLrKPdG_HcA9B7Lh");})();
+    </script>
+  </head>
 <body>
 
     <!-- header -->
@@ -647,8 +653,8 @@
             <div class = "contact-left wow animate__animated animate__fadeInLeft animate__slow">
               <h2>Itt tudsz üzenni</h2>
               <form id="contact-form-id">
-                <input type = "text" class = "form-control" placeholder="Neved" required>
-                <input type = "email" class = "form-control" placeholder="Email-ed" required>
+                <input type = "text" class = "form-control" placeholder="Neved" id="fromName" required>
+                <input type = "email" class = "form-control" placeholder="Email-ed" id="fromEmail" required>
                 <div class="left-form-p">
                   <p id="radioValue">Válasszd az ingyenes előkonzultációt!</p>
                   <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
@@ -657,8 +663,8 @@
                   <p id="valueList">Válasszd ki a kívánt szolgáltatást! </p>
                   <!-- <i class="fa-solid fa-circle-arrow-right"></i> -->
                 </div>
-                <textarea placeholder="Üzeneted" rows = "7" required></textarea>
-                <button type = "submit" class = "submit-btn">Küldés</button>
+                <textarea placeholder="Üzeneted" rows = "7" id="formMsg" required></textarea>
+                <!-- <button onclick="sendMail()" type = "submit" class = "submit-btn">Küldés</button> -->
               </form>
             </div>
   
@@ -707,7 +713,7 @@
           </div>
           <div class="contact-middle">
             <div class="send-button">
-              <button form="contact-form-id" type = "submit" class = "submit-btn">Küldés</button>
+              <button onclick="sendMail()" form="contact-form-id" type = "submit" class = "submit-btn">Küldés</button>
             </div>
           </div>
         </div>
