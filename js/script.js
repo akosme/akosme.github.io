@@ -8,6 +8,10 @@ $(document).ready(function(){
         $('.navbar-collapse').slideToggle(400);
     });
 
+    $('.nav-item').click(function(){
+        $('.navbar-collapse').slideToggle(300);
+    });
+
     // navbar bg change on scroll
     $(window).scroll(function(){
         let pos = $(window).scrollTop();
