@@ -151,7 +151,11 @@ function sendMail(params){
     emailjs.send('service_x55jo8n', 'template_7sit8pl', templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
+       alert('Üzenet küldése sikeresen megtörtént!');
+       location.reload();
     }, function(error) {
        console.log('FAILED...', error);
+       alert('Üzenet küldése során probléma lépett fel, kérlek próbáld meg újra!');
+       location.reload();
     });
 }

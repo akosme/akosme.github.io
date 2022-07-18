@@ -505,7 +505,7 @@ section{
     text-transform: none;
 }
 .contact .row{
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 .contact .row > div{
     margin: 2rem 0;
