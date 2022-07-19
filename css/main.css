@@ -368,7 +368,7 @@ section{
     background: #f9f9f9;
 }
 .faq .row{
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 .faq-item{
     margin: 0.6rem 0;
