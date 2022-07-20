@@ -13,7 +13,7 @@
 }
 html{
     color: var(--black);
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.5;
     text-rendering: optimizeLegibility;
@@ -258,8 +258,10 @@ section{
     text-align: left;
 }
 .feature-left img{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    display: block;
+    float: left;
 }
 .feature-right{
     margin-top: 4rem;
@@ -372,7 +374,7 @@ section{
     /* margin-top: 2rem; */
 }
 .faq-item{
-    margin: 0.6rem 0;
+    margin: 0.9rem 0;
 }
 .faq-head{
     background: var(--white-smoke);
@@ -384,6 +386,9 @@ section{
 }
 .faq h2, h3{
     text-transform: none;
+}
+.faq i{
+    font-size: 1.4rem;
 }
 .faq .row h2{
     text-align: center;
